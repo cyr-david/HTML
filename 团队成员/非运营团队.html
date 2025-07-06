@@ -1,0 +1,88 @@
+<!--
+非运营团队介绍页面模板
+本页面用于展示非运营团队的多成员混合介绍。
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- 设置字符集为UTF-8，保证中文显示正常 -->
+    <meta charset="UTF-8">
+    <!-- 响应式设计，适配移动端设备 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 网页标题 -->
+    <title>非运营团队 - CG团队</title>
+    <!-- 引入主站样式表 -->
+    <link rel="stylesheet" href="https://cyr-david.github.io/HTML/style.css">
+    <style>
+        /* 可根据需要添加本页面专属样式 */
+        .non-ops-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: flex-start;
+            margin-top: 32px;
+        }
+        .non-ops-member {
+            background: #f7f8fa;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            padding: 18px 24px;
+            flex: 1 1 220px;
+            min-width: 180px;
+            max-width: 240px;
+            text-align: center;
+        }
+        .non-ops-member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 页面头部 -->
+    <header>
+        <h1>非运营团队</h1>
+        <nav>
+            <!-- 返回主页和主要团队成员页面的导航 -->
+            <a href="https://cyr-david.github.io/HTML/index.html">主页</a>
+            <a href="https://cyr-david.github.io/HTML/index.html#team">主要团队成员</a>
+        </nav>
+    </header>
+
+    <!-- 非运营团队成员列表 -->
+    <main>
+        <section>
+            <h2>团队成员介绍</h2>
+            <div class="non-ops-list">
+                <!-- 示例成员1 -->
+                <div class="non-ops-member">
+                    <img src="https://cyr-david.github.io/HTML/touxiang.jpg" alt="成员头像">
+                    <h3>张三</h3>
+                    <p>暂无</p>
+                </div>
+                <!-- 示例成员2 -->
+                <div class="non-ops-member">
+                    <img src="https://cyr-david.github.io/HTML/touxiang.jpg" alt="成员头像">
+                    <h3>李四</h3>
+                    <p>暂无</p>
+                </div>
+                <!-- 示例成员3 -->
+                <div class="non-ops-member">
+                    <img src="https://cyr-david.github.io/HTML/touxiang.jpg" alt="成员头像">
+                    <h3>王五</h3>
+                    <p>暂无</p>
+                </div>
+                <!-- 可继续添加更多非运营成员 -->
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚信息 -->
+    <footer>
+        &copy; 2025 CG团队 保留所有权利
+    </footer>
+</body>
+</html>

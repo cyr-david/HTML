@@ -1,0 +1,176 @@
+<!--
+网站更新改动日志模板
+本页面用于记录网站每次更新的内容和时间。
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- 设置字符集为UTF-8，保证中文显示正常 -->
+    <meta charset="UTF-8">
+    <!-- 响应式设计，适配移动端设备 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 网页标题 -->
+    <title>网站更新改动日志</title>
+    <!-- 引入主站样式表 -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 日志区样式，可根据需要调整 */
+        .log-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+            padding: 36px 32px;
+        }
+        .log-title {
+            color: #222a36;
+            border-left: 4px solid #ffd700;
+            padding-left: 12px;
+            font-size: 1.5em;
+            margin-bottom: 18px;
+        }
+        .log-list {
+            list-style: none;
+            padding: 0;
+        }
+        .log-item {
+            margin-bottom: 24px;
+            border-left: 3px solid #eee;
+            padding-left: 16px;
+        }
+        .log-date {
+            color: #888;
+            font-size: 0.95em;
+        }
+        .log-content {
+            margin: 6px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="log-container">
+        <!-- 日志区标题 -->
+        <div class="log-title">网站更新改动日志</div>
+        <!-- 日志列表，每次更新写一条 -->
+        <ul class="log-list">
+            <!-- 示例日志项 -->
+            <li class="log-item">
+                <div class="log-date">2025-07-02</div>
+                <div class="log-content">创建了该网站</div>
+            </li>
+            <li class="log-item">
+                <div class="log-date">2025-07-03</div>
+                <div class="log-content">完善到可以正常运行</div>
+            </li>
+            <!-- 新增日志项请复制上面结构 -->
+        </ul>
+    </div>
+</body>
+<!-- 回到顶部按钮组件 -->
+<button id="backToTop" title="回到顶部">↑</button>
+<!-- 回到首页按钮组件 -->
+<a id="backToHome" href="index.html" title="回到首页">🏠</a>
+<script>
+    // 获取回到顶部按钮对象
+    const backToTop = document.getElementById('backToTop');
+    // 监听滚动事件，滚动超过200px显示回到顶部按钮
+    window.onscroll = function() {
+        if (document.documentElement.scrollTop > 200 || document.body.scrollTop > 200) {
+            backToTop.style.display = 'block';
+        } else {
+            backToTop.style.display = 'none';
+        }
+    };
+    // 点击按钮平滑滚动到顶部
+    backToTop.onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+</script>
+<style>
+    /* 回到顶部按钮样式 */
+    #backToTop {
+        position: fixed;
+        right: 32px;
+        bottom: 32px;
+        width: 44px;
+        height: 44px;
+        border: none;
+        border-radius: 50%;
+        background: #ffd700;
+        color: #222a36;
+        font-size: 1.6em;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        cursor: pointer;
+        display: none;
+        z-index: 999;
+        transition: background 0.2s;
+    }
+    #backToTop:hover {
+        background: #ffe066;
+    }
+    /* 回到首页按钮样式，始终显示，避免与回到顶部重叠 */
+    #backToHome {
+        position: fixed;
+        right: 32px;
+        bottom: 90px; /* 保证与回到顶部按钮有间距 */
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: #222a36;
+        color: #ffd700;
+        font-size: 1.5em;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        z-index: 999;
+        transition: background 0.2s;
+    }
+    #backToHome:hover {
+        background: #444c5c;
+    }
+</style>
+<!-- 回到顶部按钮组件 -->
+<button id="backToTop" title="回到顶部">↑</button>
+<script>
+    // 获取按钮对象
+    const backToTop = document.getElementById('backToTop');
+    // 监听滚动事件，滚动超过200px显示按钮
+    window.onscroll = function() {
+        if (document.documentElement.scrollTop > 200 || document.body.scrollTop > 200) {
+            backToTop.style.display = 'block';
+        } else {
+            backToTop.style.display = 'none';
+        }
+    };
+    // 点击按钮平滑滚动到顶部
+    backToTop.onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+</script>
+<style>
+    /* 回到顶部按钮样式 */
+    #backToTop {
+        position: fixed;
+        right: 32px;
+        bottom: 32px;
+        width: 44px;
+        height: 44px;
+        border: none;
+        border-radius: 50%;
+        background: #ffd700;
+        color: #222a36;
+        font-size: 1.6em;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        cursor: pointer;
+        display: none;
+        z-index: 999;
+        transition: background 0.2s;
+    }
+    #backToTop:hover {
+        background: #ffe066;
+    }
+</style>
+</html>

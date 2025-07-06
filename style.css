@@ -1,0 +1,125 @@
+/*
+style.css
+本文件用于定义工作室网站的样式。
+*/
+
+body {
+    /* 设置页面的基础字体和背景颜色 */
+    font-family: 'Helvetica Neue', Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* 顶部导航栏样式 */
+    background: #222a36;
+    color: #fff;
+    padding: 32px 0 24px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    /* 网站主标题样式 */
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+nav {
+    /* 导航菜单样式 */
+    margin-top: 18px;
+}
+
+nav a {
+    /* 导航链接样式 */
+    color: #fff;
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    /* 鼠标悬停时导航链接高亮 */
+    color: #ffd700;
+}
+
+main {
+    /* 主体内容区域样式 */
+    max-width: 900px;
+    margin: 40px auto 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 36px 32px;
+}
+
+section {
+    /* 各个内容板块的间距 */
+    margin-bottom: 40px;
+}
+
+section:last-child {
+    /* 最后一个板块不需要下边距 */
+    margin-bottom: 0;
+}
+
+h2 {
+    /* 板块标题样式 */
+    color: #222a36;
+    border-left: 4px solid #ffd700;
+    padding-left: 12px;
+    font-size: 1.5em;
+    margin-bottom: 18px;
+}
+
+footer {
+    /* 页脚样式 */
+    text-align: center;
+    color: #888;
+    padding: 24px 0 16px 0;
+    font-size: 1em;
+    background: none;
+}
+
+.team-list {
+    /* 团队成员列表样式 */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: flex-start;
+}
+
+.team-member {
+    /* 单个成员卡片样式 */
+    background: #f7f8fa;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    padding: 18px 24px;
+    flex: 1 1 220px;
+    min-width: 180px;
+    max-width: 240px;
+    text-align: center;
+}
+
+.team-member img {
+    /* 成员头像样式 */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 600px) {
+    /* 移动端适配 */
+    main {
+        padding: 18px 6px;
+    }
+    .team-list {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
